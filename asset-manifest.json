@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/words-remover/static/css/main.6021b011.css",
-    "main.js": "/words-remover/static/js/main.c9310dc3.js",
+    "main.js": "/words-remover/static/js/main.68203b42.js",
     "static/js/453.56cab6c1.chunk.js": "/words-remover/static/js/453.56cab6c1.chunk.js",
     "index.html": "/words-remover/index.html",
     "main.6021b011.css.map": "/words-remover/static/css/main.6021b011.css.map",
-    "main.c9310dc3.js.map": "/words-remover/static/js/main.c9310dc3.js.map",
+    "main.68203b42.js.map": "/words-remover/static/js/main.68203b42.js.map",
     "453.56cab6c1.chunk.js.map": "/words-remover/static/js/453.56cab6c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6021b011.css",
-    "static/js/main.c9310dc3.js"
+    "static/js/main.68203b42.js"
   ]
 }
