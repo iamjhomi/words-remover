@@ -57,8 +57,9 @@ export default function Home() {
             <p className="no-results">No tools found matching "{search}"</p>
           )}
           {filteredTools.map((t) => {
-            const base = process.env.PUBLIC_URL || '';
-            const href = t.externalUrl ? t.externalUrl : `${base}/tools/${t.id}`;
+            // For external URLs, use the external link
+            // For internal tools, use hash-based routing
+            const href = t.externalUrl ? t.externalUrl : `#/tools/${t.id}`;
 
             return (
               <article key={t.id} className="tool-card">
