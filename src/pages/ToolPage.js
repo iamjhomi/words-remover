@@ -3,6 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import '../App.css';
 import WordRemover from './WordRemover';
 import CaseConverter from './CaseConverter';
+import NumberConverter from './NumberConverter';
+import NetworkAssistant from './NetworkAssistant';
 
 export default function ToolPage() {
   const { toolId } = useParams();
@@ -22,6 +24,16 @@ export default function ToolPage() {
       title: 'VLSM Calculator',
       subtitle: 'Plan subnets with Variable Length Subnet Masking.',
       body: 'Enter a network (CIDR) and a list of required host counts; the calculator will assign subnets and masks. Tell me how you want the input/output formatted and I will implement it.'
+    },
+    'number-converter': {
+      title: 'Number System Converter',
+      subtitle: 'Convert between decimal, binary, octal, and hexadecimal.',
+      body: 'Enter a number in any base and instantly see its equivalent in all other number systems.'
+    },
+    'network-assistant': {
+      title: 'Network Assistant',
+      subtitle: 'AI-powered networking help with explanations and CLI code.',
+      body: 'Get instant explanations and configuration examples for any networking topic.'
     }
   };
 
@@ -67,6 +79,42 @@ export default function ToolPage() {
 
         <main className="content tool-page">
           <CaseConverter />
+        </main>
+
+        <footer className="site-footer">&copy; {new Date().getFullYear()} Multi-Tool Hub</footer>
+      </div>
+    );
+  }
+
+  // Number Converter tool
+  if (toolId === 'number-converter') {
+    return (
+      <div className="site-container">
+        <header className="site-header small">
+          <h1 className="site-title">{info.title}</h1>
+          <p className="site-subtitle">{info.subtitle}</p>
+        </header>
+
+        <main className="content tool-page">
+          <NumberConverter />
+        </main>
+
+        <footer className="site-footer">&copy; {new Date().getFullYear()} Multi-Tool Hub</footer>
+      </div>
+    );
+  }
+
+  // Network Assistant tool
+  if (toolId === 'network-assistant') {
+    return (
+      <div className="site-container">
+        <header className="site-header small">
+          <h1 className="site-title">{info.title}</h1>
+          <p className="site-subtitle">{info.subtitle}</p>
+        </header>
+
+        <main className="content tool-page">
+          <NetworkAssistant />
         </main>
 
         <footer className="site-footer">&copy; {new Date().getFullYear()} Multi-Tool Hub</footer>

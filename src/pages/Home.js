@@ -21,6 +21,18 @@ const tools = [
     description: 'Variable Length Subnet Mask calculator to plan IP subnets efficiently.',
     icon: '🌐',
     externalUrl: 'https://iamjhomi.github.io/new/'
+  },
+  {
+    id: 'number-converter',
+    name: 'Number System Converter',
+    description: 'Convert between decimal, binary, octal, and hexadecimal.',
+    icon: '🔢'
+  },
+  {
+    id: 'network-assistant',
+    name: 'Network Assistant',
+    description: 'AI-powered networking help with explanations and CLI configuration code.',
+    icon: '🎓'
   }
 ];
 
